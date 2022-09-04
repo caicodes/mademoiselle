@@ -1,33 +1,33 @@
-import React, { useRef } from 'react';
+import React, { useRef } from 'react'
 
-import Container from '../components/Container';
-import Hero from '../components/Hero';
-import ThemeLink from '../components/ThemeLink';
-import Layout from '../components/Layout/Layout';
+import Container from '../components/Container'
+import Hero from '../components/Hero'
+import ThemeLink from '../components/ThemeLink'
+import Layout from '../components/Layout/Layout'
 
-import * as styles from './about.module.css';
+import * as styles from './about.module.css'
 const AboutPage = (props) => {
-  let historyRef = useRef();
-  let valuesRef = useRef();
-  let sustainabilityRef = useRef();
+  let historyRef = useRef()
+  let valuesRef = useRef()
+  let sustainabilityRef = useRef()
 
   const handleScroll = (elementReference) => {
     if (elementReference) {
       window.scrollTo({
         behavior: 'smooth',
         top: elementReference.current.offsetTop - 280,
-      });
+      })
     }
-  };
+  }
 
   return (
     <Layout disablePaddingBottom>
       <div className={styles.root}>
         {/* Hero Container */}
         <Hero
-          maxWidth={'900px'}
-          image={'/about.png'}
-          title={`Sydney \n A British brand since 1860`}
+          maxWidth={'1920px'}
+          image={'/banner-sundress.jpg'}
+          title={`Mademoiselle \n Be yourself...`}
         />
 
         <div className={styles.navContainer}>
@@ -39,8 +39,7 @@ const AboutPage = (props) => {
           </ThemeLink>
           <ThemeLink
             onClick={() => handleScroll(sustainabilityRef)}
-            to={'#sustainability'}
-          >
+            to={'#sustainability'}>
             Sustainability
           </ThemeLink>
         </div>
@@ -48,8 +47,8 @@ const AboutPage = (props) => {
         <Container size={'large'} spacing={'min'}>
           <div className={styles.detailContainer} ref={historyRef}>
             <p>
-              Founded in 1860, Sydney is an innovative British brand with a
-              contemporary edge. We make timeless everyday luxury clothing.
+              Founded in 1860, Mademoiselle is an innovative British brand with
+              a contemporary edge. We make timeless everyday luxury clothing.
             </p>
             <br />
             <br />
@@ -122,7 +121,7 @@ const AboutPage = (props) => {
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default AboutPage;
+export default AboutPage

@@ -1,9 +1,9 @@
-import React from 'react';
-import * as styles from './sample.module.css';
+import React from 'react'
+import * as styles from './sample.module.css'
 
-import Blog from '../../components/Blog';
-import Container from '../../components/Container';
-import Layout from '../../components/Layout/Layout';
+import Blog from '../../components/Blog'
+import Container from '../../components/Container'
+import Layout from '../../components/Layout/Layout'
 
 const SamplePage = (props) => {
   return (
@@ -13,10 +13,9 @@ const SamplePage = (props) => {
           <div className={styles.blogContainer}>
             <Blog
               category={'design'}
-              title={'Friends of Sydney: Flora Fricker'}
+              title={'Friends of Mademoiselle: Flora Fricker'}
               image={'/blogFeatured.png'}
-              alt={''}
-            >
+              alt={''}>
               <div className={styles.content}>
                 <p className={styles.excerpt}>
                   London-based floral designer Flora Fricker champions seasonal
@@ -26,7 +25,7 @@ const SamplePage = (props) => {
                   eye-catching sustainably sourced wreaths.
                 </p>
                 <p className={styles.blogParagraph}>
-                  Delaware limited liability company (The Sydney) collects
+                  Delaware limited liability company (The Mademoiselle) collects
                   personal information that you voluntarily provide when
                   applying or registering for an account with The Upside or
                   making a purchase on The Upside website; www.theupside.com
@@ -88,7 +87,7 @@ const SamplePage = (props) => {
         </Container>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default SamplePage;
+export default SamplePage

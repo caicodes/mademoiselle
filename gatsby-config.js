@@ -12,7 +12,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Mademoiselle Online`,
-        short_name: `Sydney`,
+        short_name: `Mademoiselle`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#ffffff`,

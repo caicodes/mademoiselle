@@ -4,7 +4,7 @@
 
 /* special case with the image */
 .root > div {
-    background-position: right;
+    background-position: center top;
 }
 
 .navContainer {

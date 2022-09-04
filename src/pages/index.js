@@ -30,8 +30,8 @@ const IndexPage = () => {
       <SEO />
       {/* Hero Container */}
       <Hero
-        maxWidth={'500px'}
-        image={'/banner1.png'}
+        maxWidth={'1920px'}
+        image={'/about.jpg'}
         title={'Essentials for a cold winter'}
         subtitle={'Discover Autumn Winter 2021'}
         ctaText={'shop now'}
@@ -41,12 +41,19 @@ const IndexPage = () => {
       {/* Message Container */}
       <div className={styles.messageContainer}>
         <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
+          This is a demonstration of the Mademoiselle Brand by{' '}
+          <span className={styles.gold}>artasce creative.</span>
         </p>
         <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
-          <span className={styles.gold}>scotch&soda</span>
+          view another <span className={styles.gold}>brand site</span> by{' '}
+          <span className={styles.gold}>
+            artasce creative{' '}
+            <a
+              href="https://mademoiselle-collections.netlify.app"
+              target="_blank">
+              here
+            </a>{' '}
+          </span>
         </p>
       </div>
 
@@ -100,7 +107,7 @@ const IndexPage = () => {
       {/* Quote */}
       <Quote
         bgColor={'var(--standard-light-grey)'}
-        title={'about Sydney'}
+        title={'about Mademoiselle'}
         quote={
           '“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
         }

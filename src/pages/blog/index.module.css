@@ -20,7 +20,7 @@
 
 /* special case with the image */
 .root > div {
-    background-position: center;
+    background-position: center top;
 }
 
 .navContainer > div:first-child {

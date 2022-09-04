@@ -1,23 +1,23 @@
-import React, { useRef } from 'react';
-import * as styles from './about.module.css';
+import React, { useRef } from 'react'
+import * as styles from './about.module.css'
 
-import Layout from '../components/Layout/Layout';
-import ThemeLink from '../components/ThemeLink';
-import Container from '../components/Container';
-import Button from '../components/Button';
+import Layout from '../components/Layout/Layout'
+import ThemeLink from '../components/ThemeLink'
+import Container from '../components/Container'
+import Button from '../components/Button'
 
 const HowToUsePage = (props) => {
-  let builtRef = useRef();
-  let toolsRef = useRef();
+  let builtRef = useRef()
+  let toolsRef = useRef()
 
   const handleScroll = (elementReference) => {
     if (elementReference) {
       window.scrollTo({
         behavior: 'smooth',
         top: elementReference.current.offsetTop - 280,
-      });
+      })
     }
-  };
+  }
 
   return (
     <Layout>
@@ -42,9 +42,9 @@ const HowToUsePage = (props) => {
                 (Matter.).
               </p>
               <p>
-                The Sydney theme is built for Netlify as an ecommerce theme
-                suitable for JAMStack archtitecture. This theme is free to use
-                through Netlify’s GitHub account, and can be used with any
+                The Mademoiselle theme is built for Netlify as an ecommerce
+                theme suitable for JAMStack archtitecture. This theme is free to
+                use through Netlify’s GitHub account, and can be used with any
                 ecommerce platform that support a headless architecture.
               </p>
               <p>
@@ -152,8 +152,7 @@ const HowToUsePage = (props) => {
               <p>
                 <Button
                   target={true}
-                  href="https://www.matterdesign.com.au/contact/"
-                >
+                  href="https://www.matterdesign.com.au/contact/">
                   Contact the team at Matter.
                 </Button>
               </p>
@@ -163,12 +162,11 @@ const HowToUsePage = (props) => {
         <div className={styles.imageContainer}>
           <img
             alt={'Best of Breed tools'}
-            src={'/how-to-use/logos@2x.png'}
-          ></img>
+            src={'/how-to-use/logos@2x.png'}></img>
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default HowToUsePage;
+export default HowToUsePage

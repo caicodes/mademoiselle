@@ -1,5 +1,5 @@
-import React from 'react';
-import * as styles from './Policy.module.css';
+import React from 'react'
+import * as styles from './Policy.module.css'
 
 const Policy = (props) => {
   return (
@@ -7,10 +7,10 @@ const Policy = (props) => {
       <div className={styles.section}>
         <h3>1. Lorem Ipsum</h3>
         <p>
-          Delaware limited liability company (The Sydney) collects personal
-          information that you voluntarily provide when applying or registering
-          for an account with The Upside or making a purchase on The Upside
-          website; www.theupside.com (the Website).
+          Delaware limited liability company (The Mademoiselle) collects
+          personal information that you voluntarily provide when applying or
+          registering for an account with The Upside or making a purchase on The
+          Upside website; www.theupside.com (the Website).
         </p>
         <p>
           This Privacy Policy (Privacy Policy) outlines how your information is
@@ -101,7 +101,7 @@ const Policy = (props) => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Policy;
+export default Policy
