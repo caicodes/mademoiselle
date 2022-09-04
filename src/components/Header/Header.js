@@ -23,11 +23,13 @@ const Header = (prop) => {
   const [menu, setMenu] = useState()
   const [activeMenu, setActiveMenu] = useState()
 
+  const [activeScroll, setActiveScroll] = useState(false)
+
   const [showSearch, setShowSearch] = useState(false)
   const [search, setSearch] = useState('')
 
   const searchRef = createRef()
-  const bannerMessage = 'Free shipping worldwide'
+  // const bannerMessage = 'Free shipping worldwide'
   const searchSuggestions = [
     'Oversize sweaters',
     'Lama Pajamas',
@@ -62,6 +64,7 @@ const Header = (prop) => {
       setShowMenu(false)
       setShowSearch(false)
       setActiveMenu(undefined)
+      setActiveScroll(true)
     }
     window.removeEventListener('scroll', onScroll)
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -80,9 +83,9 @@ const Header = (prop) => {
 
   return (
     <div className={styles.root}>
-      <div className={styles.headerMessageContainer}>
+      {/* <div className={styles.headerMessageContainer}>
         <span>{bannerMessage}</span>
-      </div>
+      </div> */}
       <Container size={'large'} spacing={'min'}>
         {/* header container */}
         <div className={styles.header}>
