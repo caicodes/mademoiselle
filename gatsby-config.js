@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Mademoiselle`,
+    description: `Mademoiselle Fashion... be yourself.`,
+    twitterUsername: `@ArtasceCreative`,
+    image: `/icon.png`,
     siteUrl: `https://mademoiselle.netlify.app`,
   },
+
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
