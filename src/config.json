@@ -3,13 +3,11 @@
     { "value": "AUS", "label": "Australia (AUS $)" },
     { "value": "CAD", "label": "Canada (CAD $)" },
     { "value": "USD", "label": "United States (US $)" },
-    { "value": "EUR", "label": "Germany (EUR €)" },
-    { "value": "HKD", "label": "Hong Kong (HKD $)" }
+    { "value": "EUR", "label": "France (EUR €)" }
   ],
   "languageList": [
     { "value": "english", "label": "English" },
-    { "value": "german", "label": "Deutsch" },
-    { "value": "mandarin", "label": "普通话" }
+    { "value": "french", "label": "French" }
   ],
   "social": {
     "facebook": "https://www.facebook.com/MatterDesign/",

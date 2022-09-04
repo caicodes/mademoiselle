@@ -3,10 +3,13 @@
     justify-content: center;
     cursor: pointer;
 }
-
+.root svg {
+    width: auto;
+    height: 120px;
+    padding: 5px 0;
+}
 @media (max-width: 800px) {
     .root svg {
-        width: 90px;
-        height: 16.67px;
+        height: 80px;
     }
 }
