@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Sydney Ecommerce Theme`,
+        name: `Mademoiselle Online`,
         short_name: `Sydney`,
         start_url: `/`,
         background_color: `#000000`,
@@ -18,4 +18,4 @@ module.exports = {
     },
     'gatsby-plugin-netlify',
   ],
-};
+}
