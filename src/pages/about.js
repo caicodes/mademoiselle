@@ -27,7 +27,7 @@ const AboutPage = (props) => {
         <Hero
           maxWidth={'1920px'}
           image={'/banner-sundress.jpg'}
-          title={`Mademoiselle \n Be yourself...`}
+          title={`Mademoiselle \n be yourself...`}
         />
 
         <div className={styles.navContainer}>

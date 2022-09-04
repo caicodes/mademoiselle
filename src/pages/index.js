@@ -32,8 +32,8 @@ const IndexPage = () => {
       <Hero
         maxWidth={'1920px'}
         image={'/about.jpg'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
+        title={'MADEMOISELLE'}
+        subtitle={'2022 FALL/WINTER COLLECTION NOW AVAILABLE'}
         ctaText={'shop now'}
         ctaAction={goToShop}
       />
