@@ -1,27 +1,27 @@
-import { Link } from 'gatsby';
-import React, { useState } from 'react';
+import { Link } from 'gatsby'
+import React, { useState } from 'react'
 
-import Accordion from '../Accordion';
-import Container from '../Container';
-import Dropdown from '../Dropdown/Dropdown';
-import FormInputField from '../FormInputField/FormInputField';
-import Icon from '../Icons/Icon';
-import Button from '../Button';
-import Config from '../../config.json';
-import * as styles from './Footer.module.css';
+import Accordion from '../Accordion'
+import Container from '../Container'
+import Dropdown from '../Dropdown/Dropdown'
+import FormInputField from '../FormInputField/FormInputField'
+import Icon from '../Icons/Icon'
+import Button from '../Button'
+import Config from '../../config.json'
+import * as styles from './Footer.module.css'
 
 const Footer = (prop) => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState('')
 
   const subscribeHandler = (e) => {
-    e.preventDefault();
-    setEmail('');
-    console.log('Subscribe this email: ', email);
-  };
+    e.preventDefault()
+    setEmail('')
+    console.log('Subscribe this email: ', email)
+  }
 
   const handleSocialClick = (platform) => {
-    window.open(Config.social[platform]);
-  };
+    window.open(Config.social[platform])
+  }
 
   const renderLinks = (linkCollection) => {
     return (
@@ -33,11 +33,11 @@ const Footer = (prop) => {
                 {link.text}
               </Link>
             </li>
-          );
+          )
         })}
       </ul>
-    );
-  };
+    )
+  }
 
   return (
     <div className={styles.root}>
@@ -59,13 +59,12 @@ const Footer = (prop) => {
                     <Accordion
                       customStyle={styles}
                       type={'add'}
-                      title={linkCollection.subTitle}
-                    >
+                      title={linkCollection.subTitle}>
                       {renderLinks(linkCollection)}
                     </Accordion>
                   </div>
                 </div>
-              );
+              )
             })}
             <div className={styles.newsLetter}>
               <div className={styles.newsLetterContent}>
@@ -76,8 +75,7 @@ const Footer = (prop) => {
                 </p>
                 <form
                   className={styles.newsLetterForm}
-                  onSubmit={(e) => subscribeHandler(e)}
-                >
+                  onSubmit={(e) => subscribeHandler(e)}>
                   <FormInputField
                     icon={'arrow'}
                     id={'newsLetterInput'}
@@ -91,8 +89,7 @@ const Footer = (prop) => {
                     <div
                       onClick={() => handleSocialClick('youtube')}
                       role={'presentation'}
-                      className={styles.socialIconContainer}
-                    >
+                      className={styles.socialIconContainer}>
                       <Icon symbol={'youtube'}></Icon>
                     </div>
                   )}
@@ -101,8 +98,7 @@ const Footer = (prop) => {
                     <div
                       onClick={() => handleSocialClick('instagram')}
                       role={'presentation'}
-                      className={styles.socialIconContainer}
-                    >
+                      className={styles.socialIconContainer}>
                       <Icon symbol={'instagram'}></Icon>
                     </div>
                   )}
@@ -111,8 +107,7 @@ const Footer = (prop) => {
                     <div
                       onClick={() => handleSocialClick('facebook')}
                       role={'presentation'}
-                      className={styles.socialIconContainer}
-                    >
+                      className={styles.socialIconContainer}>
                       <Icon symbol={'facebook'}></Icon>
                     </div>
                   )}
@@ -121,8 +116,7 @@ const Footer = (prop) => {
                     <div
                       onClick={() => handleSocialClick('twitter')}
                       role={'presentation'}
-                      className={styles.socialIconContainer}
-                    >
+                      className={styles.socialIconContainer}>
                       <Icon symbol={'twitter'}></Icon>
                     </div>
                   )}
@@ -148,32 +142,26 @@ const Footer = (prop) => {
                   <img
                     className={styles.amexSize}
                     src={'/amex.png'}
-                    alt={'amex'}
-                  ></img>
+                    alt={'amex'}></img>
                 )}
                 {Config.paymentOptions.mastercard && (
                   <img
                     className={styles.masterSize}
                     src={'/master.png'}
-                    alt={'mastercard'}
-                  ></img>
+                    alt={'mastercard'}></img>
                 )}
                 {Config.paymentOptions.visa && (
                   <img
                     className={styles.visaSize}
                     src={'/visa.png'}
-                    alt={'visa'}
-                  ></img>
+                    alt={'visa'}></img>
                 )}
               </div>
               <span>
-                {new Date().getFullYear()} (c) . Built by{' '}
-                <Button target={true} href="https://www.matterdesign.com.au/">
-                  Matter.
-                </Button>{' '}
-                Powered by{' '}
-                <Button target={true} href="https://jamm.matter.design/">
-                  JAMM.™
+                &copy; {new Date().getFullYear()} &middot; All Rights Reserved
+                &middot; Website by{' '}
+                <Button target={true} href="https://artasce.com">
+                  Artasce Creative.
                 </Button>
               </span>
             </div>
@@ -181,7 +169,7 @@ const Footer = (prop) => {
         </Container>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

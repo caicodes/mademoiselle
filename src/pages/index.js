@@ -40,21 +40,7 @@ const IndexPage = () => {
 
       {/* Message Container */}
       <div className={styles.messageContainer}>
-        <p>
-          This is a demonstration of the Mademoiselle Brand by{' '}
-          <span className={styles.gold}>artasce creative.</span>
-        </p>
-        <p>
-          view another <span className={styles.gold}>brand site</span> by{' '}
-          <span className={styles.gold}>
-            artasce creative{' '}
-            <a
-              href="https://mademoiselle-collections.netlify.app"
-              target="_blank">
-              here
-            </a>{' '}
-          </span>
-        </p>
+        <p>welcome to mademoiselle</p>
       </div>
 
       {/* Collection Container */}
