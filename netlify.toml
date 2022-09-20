@@ -18,4 +18,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "INVALID, INVALID"
+    X-Frame-Options = "ALLOWALL"
